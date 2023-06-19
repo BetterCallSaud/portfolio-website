@@ -1,0 +1,422 @@
+[
+  {
+    "title": "The Wealth of Nations",
+    "author": "Adam Smith",
+    "category": "Economics"
+  },
+  {
+    "title": "Destination Mars",
+    "author": "Andrew May",
+    "category": "Science & Engineering"
+  },
+  {
+    "title": "Let's Build a Company",
+    "author": "Harpreet S. Grover, Vibhore Goyal",
+    "category": "Entrepreneurship"
+  },
+  {
+    "title": "Factfulness",
+    "author": "Hans Rosling, Ola Rosling and Anna Rosling",
+    "category": "Statistics"
+  },
+  {
+    "title": "How Not To Be Wrong",
+    "author": "Jordan Ellenberg",
+    "category": "Mathematics"
+  },
+  {
+    "title": "The 5AM Club",
+    "author": "Robin Sharma",
+    "category": "Self-Dev"
+  },
+  {
+    "title": "World's Greatest Entrepreneurs",
+    "author": "Wonderhouse Publications",
+    "category": "Entrepreneurship"
+  },
+  {
+    "title": "For the Love of Physics",
+    "author": "Walter Lewin",
+    "category": "Physics"
+  },
+  {
+    "title": "Zero EMI",
+    "author": "Rama Palaniappan",
+    "category": "Finance"
+  },
+  {
+    "title": "The Fever",
+    "author": "Sonia Shah",
+    "category": "Medicine"
+  },
+  {
+    "title": "AI: A Guide for Thinking Humans",
+    "author": "Melanie Mitchell",
+    "category": "AI"
+  },
+  {
+    "title": "The Rise of the Robots",
+    "author": "Martin Ford",
+    "category": "AI"
+  },
+  {
+    "title": "Blockchain and Cryptocurrencies",
+    "author": "Anshul Kaushik",
+    "category": "Tech"
+  },
+  {
+    "title": "50 Economics Classes",
+    "author": "Tom Butler-Bowden",
+    "category": "Economics"
+  },
+  {
+    "title": "Brief Answers to the Big Questions",
+    "author": "Stephen Hawking",
+    "category": "Physics"
+  },
+  {
+    "title": "Turing and the Universal Machine",
+    "author": "John Agar",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "category": "Finance"
+  },
+  {
+    "title": "Man's Search for Meaning",
+    "author": "Victor E. Frankle",
+    "category": "Philosophy"
+  },
+  {
+    "title": "Periodic Table (Pocket Eyewitness)",
+    "author": "DK Publishers",
+    "category": "Chemistry"
+  },
+  {
+    "title": "Black Holes: The BBC Reith Lectures",
+    "author": "Stephen Hawking",
+    "category": "Physics"
+  },
+  {
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "category": "Strategy"
+  },
+  {
+    "title": "The World Treasury of Physics, Astronomy and Mathematics",
+    "author": "Timothy Ferris",
+    "category": "STEM"
+  },
+  {
+    "title": "Elon Musk",
+    "author": "Ashley Vance",
+    "category": "Biography"
+  },
+  {
+    "title": "The Free Voice",
+    "author": "Ravish Kumar",
+    "category": "Politics"
+  },
+  {
+    "title": "Kashmir's Untold Story: Declassified",
+    "author": "Iqbal Chand Malhotra, Maaroof Raza",
+    "category": "History"
+  },
+  {
+    "title": "The Mathematical Experience",
+    "author": "Philip J. Davis, Reuben Hersh",
+    "category": "Mathematics"
+  },
+  {
+    "title": "The Creativity Code",
+    "author": "Marcus Du Sautoy",
+    "category": "AI"
+  },
+  {
+    "title": "Quran",
+    "author": "God",
+    "category": "Everything"
+  },
+  {
+    "title": "Muhammad",
+    "author": "Martin Lings",
+    "category": "Biography"
+  },
+  {
+    "title": "Science and Islam",
+    "author": "Ehsan Masood",
+    "category": "Science and Religion"
+  },
+  {
+    "title": "Aurangzeb",
+    "author": "Audrey Truschke",
+    "category": "History"
+  },
+  {
+    "title": "India's Muslim Spring",
+    "author": "Hasan Suroor",
+    "category": "Sociology"
+  },
+  {
+    "title": "The Reconstruction of Religious Thought in Islam",
+    "author": "Allama Iqbal",
+    "category": "Philosophy"
+  },
+  {
+    "title": "The History of Philosophy in Islam",
+    "author": "T.J. De Boer",
+    "category": "Philosophy"
+  },
+  {
+    "title": "How Money Got Free",
+    "author": "Brian Patrick Eha",
+    "category": "Crypto"
+  },
+  {
+    "title": "Economics: A Graphic Guide",
+    "author": "David Orrell, Boren van Loon",
+    "category": "Economics"
+  },
+  {
+    "title": "AI: A Graphic Guide",
+    "author": "Henry Brighton, Howard Selena",
+    "category": "AI"
+  },
+  {
+    "title": "Mathematics: A Graphic Guide",
+    "author": "Ziauddin Sardar, Jerry Ravetz, Borin van Loon",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Quantum Theory: A Graphic Guide",
+    "author": "J.P. McAvoy, Oscar Zarate",
+    "category": "Physics"
+  },
+  {
+    "title": "Particle Physics: A Graphic Guide",
+    "author": "Tom Whyntie, Oliver Pugh",
+    "category": "Physics"
+  },
+  {
+    "title": "Time: A Graphic Guide",
+    "author": "Craig Callender, Ralph Edney",
+    "category": "Philosophy"
+  },
+  {
+    "title": "Genetics: A Graphic Guide",
+    "author": "Steve Jones, Borin van Loon",
+    "category": "Genetics"
+  },
+  {
+    "title": "Satyarth Prakash",
+    "author": "Swami Dayanand Saraswati",
+    "category": "Religion"
+  },
+  {
+    "title": "Dadding It!",
+    "author": "Rob Kemp",
+    "category": "Parenting"
+  },
+  {
+    "title": "How to Make Your Child Smart",
+    "author": "Downa Markova, Ph.D",
+    "category": "Parenting"
+  },
+  {
+    "title": "Rich Legend",
+    "author": "Tamrong Pinkoon",
+    "category": "Finance"
+  },
+  {
+    "title": "The Power of Creative Intelligence",
+    "author": "Tony Buzan",
+    "category": "Psychology"
+  },
+  {
+    "title": "The Power of Verbal Intelligence",
+    "author": "Tony Buzan",
+    "category": "Psychology"
+  },
+  {
+    "title": "The Communist Manifesto",
+    "author": "Karl Marx, Friedrich Engels",
+    "category": "Politics"
+  },
+  {
+    "title": "Fat Loss Diet",
+    "author": "Dr. Nikhil Dhurandhar",
+    "category": "Fitness"
+  },
+  {
+    "title": "Jobonomics",
+    "author": "Gautam Das",
+    "category": "Economics"
+  },
+  {
+    "title": "Best Friends, Worst Enemies",
+    "author": "Michael Thompson (Ph.D), Catherine O'Neill Grace",
+    "category": "Sociology"
+  },
+  {
+    "title": "Introducing Fractal Geometry",
+    "author": "Nigel Gordon, Will Rood, Ralph Edney",
+    "category": "Mathematics"
+  },
+  {
+    "title": "A Biography of Innovations",
+    "author": "R. Gopalakrishnan",
+    "category": "STEM"
+  },
+  {
+    "title": "More Sales, Less  Time",
+    "author": "Jill Konrath",
+    "category": "Sales"
+  },
+  {
+    "title": "The Science of Getting Rich",
+    "author": "Wallace D. Wattles",
+    "category": "Finance"
+  },
+  {
+    "title": "Head in the Cloud",
+    "author": "William Poundstone",
+    "category": "Psychology"
+  },
+  {
+    "title": "What Would Apple Do?",
+    "author": "Dirk Beckmann",
+    "category": "Design"
+  },
+  {
+    "title": "Sales Enablement",
+    "author": "Matthews Schenk",
+    "category": "Sales"
+  },
+  {
+    "title": "World War C",
+    "author": "Dr. Sanjay Gupta",
+    "category": "Medicine"
+  },
+  {
+    "title": "Vox: Critical Conversations",
+    "author": "Buffalo Books",
+    "category": "Sociology"
+  },
+  {
+    "title": "Harsh Realities",
+    "author": "Harsh Mariwala, Ram Charan",
+    "category": "Business/Autobiography"
+  },
+  {
+    "title": "First Aid Manual",
+    "author": "DK Publisherrs",
+    "category": "Information Manual"
+  },
+  {
+    "title": "Mathematics Illustrated Dictionary",
+    "author": "Geanne Bendick",
+    "category": "Mathematics"
+  },
+  {
+    "title": "2019: How Modi Won India",
+    "author": "Rajdeep Sardesai",
+    "category": "Politics"
+  },
+  {
+    "title": "Build From Scratch",
+    "author": "Vineet Bajpai",
+    "category": "Entrepreneurship"
+  },
+  {
+    "title": "The Autobiography of Benjamin Franklin",
+    "author": "Benjamin Franklin",
+    "category": "Autobiography"
+  },
+  {
+    "title": "Champions of Invention",
+    "author": "John Hudson Tiner",
+    "category": "History of STEM"
+  },
+  {
+    "title": "Management",
+    "author": "Richard L. Daft",
+    "category": "Management"
+  },
+  {
+    "title": "The World's Religions",
+    "author": "Ninian Smart",
+    "category": "Religion"
+  },
+  {
+    "title": "Illustrated History of the World",
+    "author": "The Times",
+    "category": "History"
+  },
+  {
+    "title": "Supercars",
+    "author": "BBC Books",
+    "category": "Cars"
+  },
+  {
+    "title": "Classic Cars",
+    "author": "Martin Buckley",
+    "category": "Cars"
+  },
+  {
+    "title": "Psychology: Principles in Practice",
+    "author": "Rathus Books",
+    "category": "Psychology"
+  },
+  {
+    "title": "Microeconomics",
+    "author": "Besanko Braeutigan",
+    "category": "Economics"
+  },
+  {
+    "title": "The Last 1000 Years",
+    "author": "Paragon Books",
+    "category": "History"
+  },
+  {
+    "title": "Improve Your Word Power",
+    "author": "Caroline Taggart",
+    "category": "Language"
+  },
+  {
+    "title": "Foundations of Deep Reinforcement Learning",
+    "author": "Graesser, Keng",
+    "category": "AI"
+  },
+  {
+    "title": "Everything Essential German Book",
+    "author": "Edward Swick, M.A.",
+    "category": "Language"
+  },
+  {
+    "title": "An Introduction to Astrophysics",
+    "author": "Baidyanath Basu",
+    "category": "Physics"
+  },
+  {
+    "title": "Introduction to Quantum Mechanics",
+    "author": "David J. Griffith",
+    "category": "Physics"
+  },
+  {
+    "title": "Special Functions",
+    "author": "Earl D. Rainvill, Ph.D",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Kinematics of Nuclear Reactions",
+    "author": "Baldin, Rosenthal, Gol'Danskii",
+    "category": "Chemistry"
+  },
+  {
+    "title": "Recent Advances in Physical & Inorganic Chemistry",
+    "author": "Alfred W. Stewart, D.Sc",
+    "category": "Chemistry"
+  }
+]

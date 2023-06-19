@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar-heading {
+  background: linear-gradient(90deg, #92a2da 12.71%, #6677d0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#landing-cover {
+  background-image: url("./images/LandingCover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 712px;
+  max-height: 712px;
+  width: 100%;
+  max-width: 100%;
+  filter: brightness(63%);
+}
