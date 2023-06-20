@@ -46,14 +46,15 @@ export function Landing() {
         alt="landing cover"
       />
     </div>
-    <div className="flex justify-center align-center mb-20">
-      <div className="-bottom-10 absolute text-center">
-        <h1 className="font-serif text-7xl text-white mb-4">Saud Hashmi</h1>
-        <h1 className="font-sans text-white text-3xl">
+
+    <div className="flex justify-center align-center mb-20 sm:mb-10">
+      <div className="-bottom-10 md:absolute text-center">
+        <h1 className="font-serif md:text-7xl text-black mt-8 sm:mb-4 text-4xl md:text-white">Saud Hashmi</h1>
+        <h1 className="font-sans md:text-white text-black text-xl md:text-3xl">
           Decoding the <span style={{ color: "#FF4343" }}>Human</span>{" "}
           <span style={{ color: "#FFC120" }}>Race</span> with{" "}
           <span
-            style={{ backgroundColor: "#4763C8" }}
+            style={{ backgroundColor: "#4763C8", color: "white" }}
             className="font-aw px-1 rounded-md"
           >
             E3
@@ -63,11 +64,12 @@ export function Landing() {
     </div>
 
     {/* WHO AM I */}
-    <h1 className="font-plex text-4xl">Who am I?</h1>
+    <h1 className="font-plex sm:text-4xl text-3xl">Who am I?</h1>
     <h1 className="font-plex text-xl">(keep scrolling)</h1>
     <br />
     <div className="flex justify-center mb-20">
       <iframe
+      className="max-sm:w-full max-sm:h-60"
         width="960"
         height="540"
         src="https://www.youtube.com/embed/-RHqRPDOV-g"
@@ -79,9 +81,9 @@ export function Landing() {
     </div>
 
     {/* WHAT IS E3? */}
-    <div className="flex w-full mb-20">
-      <div className="w-1/3 bg-black">
-        <h1 className="text-6xl text-white font-sans font-semibold text-left m-10">
+    <div className="flex w-full mb-20 max-sm:flex-col">
+      <div className="w-1/3 bg-black max-sm:w-full">
+        <h1 className="text-6xl text-white font-sans font-semibold text-left m-10 max-sm:text-4xl max-sm:text-center">
           What is <br /> E3?
         </h1>
       </div>
@@ -90,9 +92,9 @@ export function Landing() {
           background:
             "conic-gradient(from 90deg at 34.33% 52.88%, #FF4343 0deg, #FFC120 283.13deg, #FF4343 360deg)",
         }}
-        className="w-2/3 text-left pl-20 py-10"
+        className="w-2/3 text-left pl-20 py-10 max-sm:w-full max-sm:text-center max-sm:pl-0"
       >
-        <h1 className="text-5xl font-sans font-bold leading-[2.5rem]">
+        <h1 className="text-5xl font-sans font-bold leading-[2.5rem] max-sm:text-4xl">
           EDUC.
           <br />
           ENGG.
@@ -102,7 +104,7 @@ export function Landing() {
         <br />
         <br />
         <div
-          className="font-sans text-white text-2xl pr-28"
+          className="font-sans text-white text-2xl pr-28 max-sm:p-0 max-sm:mx-8 max-sm:text-lg"
           style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
         >
           <p>
@@ -123,7 +125,7 @@ export function Landing() {
     {/* WHAT ELSE */}
     <div>
       <h1 className="font-plex text-4xl">What else?</h1>
-      <h1 className="font-plex text-xl">
+      <h1 className="font-plex text-xl max-sm:mx-4 max-sm:text-lg max-sm:mt-2">
         Click on the Jade Sphere in the Navbar to find out more!
       </h1>
       <div className="flex justify-center mt-10">

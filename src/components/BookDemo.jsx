@@ -20,7 +20,7 @@ export function BookDemo() {
       </h1>
       <br />
 
-      <p className="text-lg font-plex">
+      <p className="text-lg font-plex max-sm:mx-10">
         You can book a demo to inquire about any of my{" "}
         <Link to="/more#brands" className="text-blue-700 underline">
           brands
@@ -45,15 +45,15 @@ export function BookDemo() {
       </div>
 
         <h1 className="mt-20 font-bold underline text-3xl font-sans">Find Me Here</h1>
-        <div className="mt-10 text-xl flex justify-evenly mx-40 font-sans">
-            <Link className="bg-blue-800 hover:bg-blue-600 text-white py-2 px-3 rounded-full" to="https://linkedin.com/in/saud-hashmi">LinkedIn</Link>
-            <Link className="bg-gradient-to-br from-pink-600 to-yellow-500 text-white hover:from-pink-500 hover:to-yellow-400 py-2 px-3 rounded-full" to="https://instagram.com/btrcallsaud">Instagram</Link>
-            <Link className="bg-sky-500 hover:bg-sky-400 text-white py-2 px-3 rounded-full" to="https://twitter.com/@BtrCallSaud">Twitter</Link>
-            <Link className="bg-slate-800 hover:bg-slate-600 text-white py-2 px-3 rounded-full" to="https://linkedin.com/in/saud-hashmi">GitHub</Link>
+        <div className="mt-10 text-xl flex justify-evenly sm:mx-40 font-sans max-sm:flex-col max-sm:mx-20">
+            <Link className="bg-blue-800 hover:bg-blue-600 text-white py-2 px-3 rounded-full my-4" to="https://linkedin.com/in/saud-hashmi">LinkedIn</Link>
+            <Link className="bg-gradient-to-br from-pink-600 to-yellow-500 text-white hover:from-pink-500 hover:to-yellow-400 py-2 px-3 rounded-full my-4" to="https://instagram.com/btrcallsaud">Instagram</Link>
+            <Link className="bg-sky-500 hover:bg-sky-400 text-white py-2 px-3 rounded-full my-4" to="https://twitter.com/@BtrCallSaud">Twitter</Link>
+            <Link className="bg-slate-800 hover:bg-slate-600 text-white py-2 px-3 rounded-full my-4" to="https://linkedin.com/in/saud-hashmi">GitHub</Link>
         </div>
 
         <h1 className="mt-20 font-bold underline text-3xl font-sans">Contact Me Here</h1>
-        <div className="mt-10 text-xl flex justify-evenly mx-40 font-sans">
+        <div className="mt-10 text-xl flex justify-evenly sm:mx-40 font-sans max-sm:flex-col">
             <h1 className="text-indigo-600 ">
                 <b>Discord:</b>
                 <span>@btrcallsaud</span>

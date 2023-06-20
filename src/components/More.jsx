@@ -1,5 +1,6 @@
 import "../Landing.css";
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 import Brand1 from "../images/brand1.png";
 import Brand2 from "../images/brand2.png";
@@ -13,15 +14,52 @@ import Circles1 from "../images/circles1.png";
 import Circles2 from "../images/circles2.jpeg";
 
 export function More() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className="text-center">
-      <nav className="w-full h-fit p-5 flex justify-between shadow-md flex-wrap">
-        <h1>
-          <a href={"/"} className="text-3xl h-8 font-sans navbar-heading">
-            saud
-          </a>
-        </h1>
-        <div className="flex flex-wrap">
+      <nav className="w-full h-fit p-5 flex justify-between max-sm:justify-center shadow-md flex-wrap">
+        <div className="flex justify-between items-center">
+          <h1>
+            <a href={"/"} className="text-3xl h-8 font-sans navbar-heading">
+              saud
+            </a>
+          </h1>
+          <button
+            className="ml-4 p-2 rounded-md bg-gray-200 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 max-sm:block hidden"
+            onClick={toggleMenu}
+          >
+            <svg
+              className="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              {menuOpen ? (
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z"
+                />
+              ) : (
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3ZM3 3V5H21V3H3Z"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
+        <div
+          className={`mt-4 lg:mt-0 ${
+            menuOpen ? "block" : "hidden"
+          } lg:flex lg:flex-wrap lg:justify-center flex flex-wrap justify-center`}
+        >
           <h1 className="mx-8 mt-1 hover:text-slate-700">
             <a href={"#brands"} className="text-xl font-sans">
               Brands
@@ -43,41 +81,49 @@ export function More() {
             </a>
           </h1>
           <h1 className="mx-8 mt-1 hover:text-slate-700">
-            <Link to={"https://www.linkedin.com/in/saud-hashmi/"} className="text-xl font-sans" target="_blank">
+            <Link
+              to={"https://www.linkedin.com/in/saud-hashmi/"}
+              className="text-xl font-sans"
+              target="_blank"
+            >
               Resume
             </Link>
           </h1>
+          <h1 className="mx-8 mt-1 max-sm:mt-4 hover:text-slate-700">
+            <Link
+              to={"/book-demo"}
+              className="text-lg font-plex text-white bg-black px-3 py-2 rounded-full border-[3px] border-s-red-700 border-t-red-700 border-b-yellow-500 border-e-yellow-500 hover:brightness-125 animation-bounce"
+            >
+              Book a Demo
+            </Link>
+          </h1>
         </div>
-        <h1>
-          <Link
-            to={"/book-demo"}
-            className="text-lg font-plex text-white bg-black px-3 py-2 rounded-full border-[3px] border-s-red-700 border-t-red-700 border-b-yellow-500 border-e-yellow-500 hover:brightness-125 animation-bounce"
-          >
-            Book a Demo
-          </Link>
-        </h1>
       </nav>
 
       {/* BRANDS */}
       <div id="brands">
         <h1 className="mt-10 font-plex font-semibold text-4xl">Brands</h1>
         <br />
-        <p className="text-lg font-plex">
+        <p className="text-lg font-plex max-sm:text-base max-sm:mr-8">
           I am an entrepreneur, building amazing things with amazing people.
           Currently,
           <br />I am building three online brands:{" "}
           <i>BetterCallSaud, Stemble & The Sapient Believer</i>.<br />
           Click on a logo to find out more about the brand.
         </p>
-        <div className="flex justify-center mt-20">
+        <div className="flex justify-center mt-20 max-lg:flex-col max-md:w-full">
           <img
-            className="mx-20 h-60"
+            className="mx-20 max-lg:my-4 h-full"
             src={Brand1}
             alt="better call saud brand"
           />
-          <img className="mx-20 h-60" src={Brand2} alt="stemble brand" />
           <img
-            className="mx-20 h-60"
+            className="mx-20 max-lg:my-4 h-full"
+            src={Brand2}
+            alt="stemble brand"
+          />
+          <img
+            className="mx-20 max-lg:my-4 h-full"
             src={Brand3}
             alt="the sapient believer brand"
           />
@@ -88,36 +134,34 @@ export function More() {
       <div id="work">
         <h1 className="mt-40 font-plex font-semibold text-4xl">Work</h1>
         <br />
-        <p className="font-plex text-lg mb-24">
+        <p className="font-plex text-lg mb-24 max-sm:text-base max-sm:mx-8">
           Apart from my brands, there are other projects I have worked/been
           working on, and yes, <br />
           the ones listed below are the ones I really care(d) about.
         </p>
 
         {/* WORK 1 */}
-        <div className="flex w-full">
-          <div className="w-1/3 bg-black">
-            <h1 className="text-6xl text-white font-sans font-semibold text-left m-10">
-              <img src={Work1} alt="cscult" />
-            </h1>
+        <div className="flex w-full max-sm:flex-col">
+          <div className="w-1/3 bg-black max-sm:w-full">
+            <img className="" src={Work1} alt="cscult" />
           </div>
           <div
             style={{
               background:
                 "conic-gradient(from 90deg at 34.33% 52.88%, #E543FF 0deg, #20A1FF 110.62deg, #E543FF 360deg)",
             }}
-            className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center"
+            className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-sm:w-full max-sm:text-center max-sm:pl-0"
           >
-            <h1 className="text-6xl text-white font-sans font-bold leading-[2.5rem]">
+            <h1 className="text-6xl text-white font-sans font-bold leading-[2.5rem] max-sm:text-4xl">
               CSCult
             </h1>
             <br />
             <br />
             <div
-              className="font-sans text-white text-2xl pr-28"
+              className="font-sans text-white text-2xl pr-28 max-sm:pr-0 max-sm:mr-4"
               style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
             >
-              <p className="text-3xl">
+              <p className="text-3xl max-sm:text-2xl">
                 CSCult (was) the most successful online community in Medi-Caps
                 University
               </p>
@@ -135,8 +179,8 @@ export function More() {
         </div>
 
         {/* WORK 2 */}
-        <div className="flex w-full">
-          <div className="w-1/3 bg-black">
+        <div className="flex w-full max-sm:flex-col max-sm:mt-8">
+          <div className="w-1/3 bg-black max-sm:w-full">
             <img className="w-full h-full" src={Work2} alt="unholy ai" />
           </div>
           <div
@@ -144,18 +188,18 @@ export function More() {
               background:
                 "conic-gradient(from 90deg at 34.33% 52.88%, #53AC34 0deg, rgba(192, 255, 170, 0.909774) 279.38deg, #53AC34 360deg)",
             }}
-            className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center"
+            className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-sm:w-full max-sm:text-center max-sm:pl-0"
           >
-            <h1 className="text-6xl text-white font-sans font-bold leading-[2.5rem]">
+            <h1 className="text-6xl text-white font-sans font-bold leading-[2.5rem] max-sm:text-4xl max-sm:text-black">
               Unholy.ai
             </h1>
             <br />
             <br />
             <div
-              className="font-sans text-white text-2xl pr-28"
+              className="font-sans text-white text-2xl pr-28 max-sm:pr-0 max-sm:mr-4"
               style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
             >
-              <p className="text-3xl">
+              <p className="text-3xl max-sm:text-2xl">
                 an AI tool that determines whether a song has “unholy” themes or
                 elements
               </p>
@@ -173,8 +217,8 @@ export function More() {
         </div>
 
         {/* WORK 3 */}
-        <div className="flex w-full">
-          <div className="w-1/3 bg-red-900 flex flex-row justify-center align-middle">
+        <div className="flex w-full max-sm:flex-col max-sm:mt-8">
+          <div className="w-1/3 bg-red-900 flex flex-row justify-center align-middle max-sm:w-full">
             <img
               className="scale-75"
               src={Work3}
@@ -186,18 +230,18 @@ export function More() {
               background:
                 "conic-gradient(from 90deg at 34.33% 52.88%, rgba(218, 0, 0, 0.909774) -20.09deg, #FFD827 136.72deg, rgba(218, 0, 0, 0.909774) 339.91deg, #FFD827 496.72deg)",
             }}
-            className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center"
+            className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-sm:w-full max-sm:pl-0 max-sm:text-center"
           >
-            <h1 className="text-6xl text-white font-sans font-bold">
+            <h1 className="text-6xl text-white font-sans font-bold max-sm:text-4xl">
               Beyond the Boundary Podcast
             </h1>
             <br />
             <br />
             <div
-              className="font-sans text-white text-2xl pr-28"
+              className="font-sans text-white text-2xl pr-28 max-sm:pr-0 max-sm:mr-4"
               style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
             >
-              <p className="text-3xl">
+              <p className="text-3xl max-sm:text-2xl">
                 a unique sports podcast, where I and my co-host go beyond just
                 the scores and stats.
               </p>
@@ -217,30 +261,35 @@ export function More() {
 
       {/* Circles */}
       <div id="circles">
-        <h1 className="mt-40 font-plex font-semibold text-4xl">Circles</h1>
+        <h1 className="mt-20 font-plex font-semibold text-4xl">Circles</h1>
         <br />
-        <p className="text-lg font-plex mx-40">
+        <p className="text-lg font-plex max-sm:mx-8 sm:mx-40">
           Apart from building my own thing, I have "circles" where I contribute.
           The <b>E3 Philosophy</b> drives my thinking more than anything else
           (without any doubt, philosophy of Islam first).
         </p>
         <br />
-        <p className="text-lg font-plex mx-40">
-          Most of my circles are communities that require my leadership skills and OTB
-          thinking <i>(look that up if you want).</i>
+        <p className="text-lg font-plex max-sm:mx-8 sm:mx-40">
+          Most of my circles are communities that require my leadership skills
+          and OTB thinking <i>(look that up if you want).</i>
         </p>
-        <div className="mx-40 mt-10 flex flex-row justify-evenly">
-          <div className="flex flex-col align-middle">
-            <img className="w-60 h-60" src={Circles1} alt="quantumgrad" />
+        <div className="sm:mx-40 mt-10 flex flex-row justify-evenly align-middle max-sm:flex-col">
+          <div className="flex flex-col align-middle max-sm:my-8 max-sm:justify-center">
+            <div className="flex justify-center">
+              <img className="w-60 h-60" src={Circles1} alt="quantumgrad" />
+            </div>
             <br />
             <h1 className="text-2xl font-bold font-plex">QuantumGrad</h1>
           </div>
-          <div className="flex flex-col align-middle">
-            <img
-              className="w-60 h-60 rounded-full"
-              src={Circles2}
-              alt="gpt bros"
-            />
+
+          <div className="flex flex-col align-middle max-sm:my-8">
+            <div className="flex justify-center">
+              <img
+                className="w-60 h-60 rounded-full"
+                src={Circles2}
+                alt="gpt bros"
+              />
+            </div>
             <br />
             <h1 className="text-2xl font-bold font-plex">GPT_Bros</h1>
           </div>
