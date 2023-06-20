@@ -109,7 +109,7 @@ export function More() {
           Currently,
           <br />I am building three online brands:{" "}
           <i>BetterCallSaud, Stemble & The Sapient Believer</i>.<br />
-          Click on a logo to find out more about the brand.
+          {/* Click on a logo to find out more about the brand. */}
         </p>
         <div className="flex justify-center mt-20 max-lg:flex-col max-md:w-full">
           <img
