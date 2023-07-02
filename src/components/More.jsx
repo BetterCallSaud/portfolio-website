@@ -5,10 +5,14 @@ import React, { useState } from "react";
 import Brand1 from "../images/brand1.png";
 import Brand2 from "../images/brand2.png";
 import Brand3 from "../images/brand3.png";
+import Brand4 from "../images/brand4.png";
+import InstagramIcon from "../images/instagram_icon.png";
+import YouTubeIcon from "../images/youtube_icon.png";
 
 import Work1 from "../images/work1.png";
 import Work2 from "../images/work2.png";
 import Work3 from "../images/work3.png";
+import Work4 from "../images/work4.png";
 
 import Circles1 from "../images/circles1.png";
 import Circles2 from "../images/circles2.jpeg";
@@ -105,28 +109,124 @@ export function More() {
         <h1 className="mt-10 font-plex font-semibold text-4xl">Brands</h1>
         <br />
         <p className="text-lg font-plex max-sm:text-base max-sm:mr-8">
-          I am an entrepreneur, building amazing things with amazing people.
+          I am an entrepreneur, building amazing things with amazing humans and artificial intelligence.
           Currently,
-          <br />I am building three online brands:{" "}
-          <i>BetterCallSaud, Stemble & The Sapient Believer</i>.<br />
+          <br />I am building four online brands:{" "}
+          <i>BetterCallSaud, Stemble, The Sapient Believer and GPT Bros Media</i>.<br />
           {/* Click on a logo to find out more about the brand. */}
         </p>
         <div className="flex justify-center mt-20 max-lg:flex-col max-md:w-full">
-          <img
-            className="mx-20 max-lg:my-4 h-full"
-            src={Brand1}
-            alt="better call saud brand"
-          />
-          <img
-            className="mx-20 max-lg:my-4 h-full"
-            src={Brand2}
-            alt="stemble brand"
-          />
-          <img
-            className="mx-20 max-lg:my-4 h-full"
-            src={Brand3}
-            alt="the sapient believer brand"
-          />
+          {/* BETTER CALL SAUD */}
+          <div className="mx-10 max-lg:my-4">
+            <img
+              className="mb-4 w-full"
+              src={Brand1}
+              alt="better call saud brand"
+            />
+            <div className="flex justify-evenly mx-20">
+              <a
+                href="https://instagram.com/btrcallsaud"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={InstagramIcon}
+                  alt="better call saud instagram handle"
+                />
+              </a>
+              <a
+                href="https://youtube.com/@BetterCallSaud"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={YouTubeIcon} alt="better call saud youtube channel" />
+              </a>
+            </div>
+          </div>
+
+          {/* STEMBLE */}
+          <div className="mx-10 max-lg:my-4">
+            <img
+              className="mb-4 w-full"
+              src={Brand2}
+              alt="stemble brand"
+            />
+            <div className="flex justify-evenly mx-20">
+              <a
+                href="https://instagram.com/stemble_"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={InstagramIcon}
+                  alt="stemble instagram handle"
+                />
+              </a>
+              <a
+                href="https://youtube.com/@Stemble_"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={YouTubeIcon} alt="stemble youtube channel" />
+              </a>
+            </div>
+          </div>
+
+          {/* THE SAPIENT BELIEVER */}
+          <div className="mx-10 max-lg:my-4">
+            <img
+              className="mb-4 w-full"
+              src={Brand3}
+              alt="the sapient believer brand"
+            />
+            <div className="flex justify-evenly mx-20">
+              <a
+                href="https://instagram.com/thesapientbeliever"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={InstagramIcon}
+                  alt="the sapient believer instagram handle"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/@TheSapientBeliever"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={YouTubeIcon} alt="the sapient believer youtube channel" />
+              </a>
+            </div>
+          </div>
+
+          {/* GPT BROS MEDIA */}
+          <div className="mx-10 max-lg:my-4">
+            <img
+              className="mb-4 w-full"
+              src={Brand4}
+              alt="gpt bros media brand"
+            />
+            <div className="flex justify-evenly mx-20">
+              <a
+                href="https://instagram.com/gptbros_media"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={InstagramIcon}
+                  alt="gpt bros media instagram handle"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/@GPTBrosMedia"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={YouTubeIcon} alt="gpt bros media youtube channel" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -257,6 +357,42 @@ export function More() {
             </div>
           </div>
         </div>
+
+        {/* WORK 4 */}
+        <div className="flex w-full max-sm:flex-col max-sm:mt-8">
+          <div className="w-1/3 bg-slate-900 flex flex-row justify-center align-middle max-sm:w-full">
+            <div className="flex flex-row justify-center align-middle">
+            <img
+              className="w-full h-full scale-50"
+              src={Work4}
+              alt="audio2subs - generate single word subtitles from audio"
+            />
+            </div>
+          </div>
+          <div
+            style={{
+              background:
+                "rgba(39, 39, 39, 1)",
+            }}
+            className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-sm:w-full max-sm:pl-0 max-sm:text-center"
+          >
+            <h1 className="text-6xl text-white font-sans font-bold max-sm:text-4xl">
+              Audio2Subs
+            </h1>
+            <br />
+            <br />
+            <div
+              className="font-sans text-white text-2xl pr-28 max-sm:pr-0 max-sm:mr-4"
+              style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+            >
+              <p className="text-3xl max-sm:text-2xl">
+                an AI tool that transcribes audio into single-word timestamped subtitles, ready to be used for buzzing content creation
+              </p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
       {/* Circles */}
