@@ -48,6 +48,7 @@ export function BookDemo() {
         <div className="mt-10 text-xl flex justify-evenly sm:mx-40 font-sans max-sm:flex-col max-sm:mx-20">
             <Link className="bg-blue-800 hover:bg-blue-600 text-white py-2 px-3 rounded-full my-4" to="https://linkedin.com/in/saud-hashmi">LinkedIn</Link>
             <Link className="bg-gradient-to-br from-pink-600 to-yellow-500 text-white hover:from-pink-500 hover:to-yellow-400 py-2 px-3 rounded-full my-4" to="https://instagram.com/btrcallsaud">Instagram</Link>
+            <Link className="bg-black text-white hover:bg-white hover:text-black hover:border-2 py-2 px-3 rounded-full my-4" to="https://threads.net/@btrcallsaud">Threads</Link>
             <Link className="bg-sky-500 hover:bg-sky-400 text-white py-2 px-3 rounded-full my-4" to="https://twitter.com/@BtrCallSaud">Twitter</Link>
             <Link className="bg-slate-800 hover:bg-slate-600 text-white py-2 px-3 rounded-full my-4" to="https://linkedin.com/in/saud-hashmi">GitHub</Link>
         </div>

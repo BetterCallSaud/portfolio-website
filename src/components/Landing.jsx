@@ -50,7 +50,7 @@ export function Landing() {
     <div className="flex justify-center align-center mb-20 sm:mb-10">
       <div className="-bottom-10 md:absolute text-center">
         <h1 className="font-serif md:text-7xl text-black mt-8 sm:mb-4 text-4xl md:text-white">Saud Hashmi</h1>
-        <h1 className="font-sans md:text-white text-black text-xl md:text-3xl">
+        <h1 className="font-sans md:text-white text-black max-md:text-white text-xl md:text-3xl bg-slate-900/80 py-2 px-4">
           Decoding the <span style={{ color: "#FF4343" }}>Human</span>{" "}
           <span style={{ color: "#FFC120" }}>Race</span> with{" "}
           <span
@@ -114,9 +114,9 @@ export function Landing() {
           </p>
           <br />
           <p>
-            <b>Entrepreneurship</b> builds you into a decision-maker. <br />
+            <b>Education</b> empowers your thinking and personality.<br />
             <b>Engineering</b> makes you a problem-solver. <br />
-            <b>Education</b> empowers your thinking and personality.
+            <b>Entrepreneurship</b> builds you into a decision-maker. 
           </p>
         </div>
       </div>
@@ -127,6 +127,9 @@ export function Landing() {
       <h1 className="font-plex text-4xl">What else?</h1>
       <h1 className="font-plex text-xl max-sm:mx-4 max-sm:text-lg max-sm:mt-2">
         Click on the Jade Sphere in the Navbar to find out more!
+      </h1>
+      <h1 className="font-plex text-md max-sm:mx-4 max-sm:text-md max-sm:mt-2 text-gray-800">
+        (assuming you know what a Navbar is... the thing at the top of any website 🙂)
       </h1>
       <div className="flex justify-center mt-10">
         <img

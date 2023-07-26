@@ -346,28 +346,35 @@ export function More() {
                 the scores and stats.
               </p>
               <br />
+              <div className="flex max-sm:justify-center">
               <a
                 rel="noreferrer"
                 href="https://youtube.com/@thebtbpodcast"
                 target="_blank"
-                className="text-lg bg-white text-black p-2 rounded-lg hover:bg-slate-900 hover:text-white duration-200 tracking-widest"
+                className="mr-4 text-lg bg-white text-black p-2 rounded-lg hover:bg-slate-900 hover:text-white duration-200 tracking-widest"
               >
                 Visit Podcast
+              </a><a
+                rel="noreferrer"
+                href="https://instagram.com/beyondtheboundarypodcast/reels"
+                target="_blank"
+                className="mr-4 text-lg bg-white text-black p-2 rounded-lg hover:bg-slate-900 hover:text-white duration-200 tracking-widest"
+              >
+                Visit Reels
               </a>
+              </div>
             </div>
           </div>
         </div>
 
         {/* WORK 4 */}
         <div className="flex w-full max-sm:flex-col max-sm:mt-8">
-          <div className="w-1/3 bg-slate-900 flex flex-row justify-center align-middle max-sm:w-full">
-            <div className="flex flex-row justify-center align-middle">
-            <img
-              className="w-full h-full scale-50"
+          <div className="w-1/3 bg-black flex flex-row justify-center align-middle max-sm:w-full">
+          <img
+              className="scale-75"
               src={Work4}
-              alt="audio2subs - generate single word subtitles from audio"
+              alt="audio2subs"
             />
-            </div>
           </div>
           <div
             style={{
@@ -377,7 +384,7 @@ export function More() {
             className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-sm:w-full max-sm:pl-0 max-sm:text-center"
           >
             <h1 className="text-6xl text-white font-sans font-bold max-sm:text-4xl">
-              Audio2Subs
+              audio2Subs
             </h1>
             <br />
             <br />
@@ -387,8 +394,17 @@ export function More() {
             >
               <p className="text-3xl max-sm:text-2xl">
                 an AI tool that transcribes audio into single-word timestamped subtitles, ready to be used for buzzing content creation
-              </p>
+              </p><br/>
+              <a
+                rel="noreferrer"
+                href="https://audio2subs.vercel.app"
+                target="_blank"
+                className="text-lg bg-white text-black p-2 rounded-lg hover:bg-slate-900 hover:text-white duration-200 tracking-widest"
+              >
+                Visit Site
+              </a>
             </div>
+            
           </div>
         </div>
 
