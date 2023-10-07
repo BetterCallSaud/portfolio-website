@@ -2,27 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Landing } from "./components/Landing";
-import { More } from "./components/More";
-import { BookDemo } from "./components/BookDemo";
+// import { Landing } from "./components/Landing";
+import NewLanding from "./components/NewLanding";
 import { Library } from "./components/Library";
+
+const resumePath = process.env.PUBLIC_URL + '/resume.pdf';
+
+function ResumeLoader() {
+  window.location.href = resumePath;
+}
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Landing />
-  },
-  {
-    path: "/more",
-    element: <More />
-  },
-  {
-    path: "/book-demo",
-    element: <BookDemo />
+    element: <NewLanding />
   },
   {
     path: "/library",
     element: <Library />
+  },
+  {
+    path: "/resume",
+    element: <ResumeLoader />
   },
 ])
 

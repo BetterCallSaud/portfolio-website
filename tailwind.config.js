@@ -8,7 +8,8 @@ module.exports = {
       'sans': 'Manrope',
       'serif': 'Playfair Display',
       'plex': 'IBM Plex Sans',
-      'aw': 'Audiowide'
+      'aw': 'Audiowide',
+      'apple': 'SF Pro Display'
     },
     extend: {},
   },

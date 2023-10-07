@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import Brand1 from "../images/brand1.png";
 import Brand2 from "../images/brand2.png";
 import Brand3 from "../images/brand3.png";
-import Brand4 from "../images/brand4.png";
+import Brand4 from "../images/brand4.jpg";
 import InstagramIcon from "../images/instagram_icon.png";
 import YouTubeIcon from "../images/youtube_icon.png";
 

@@ -22,14 +22,14 @@ export function Library() {
       <nav className="w-full h-fit p-5 flex justify-center align-middle shadow-md">
         <h1>
           <Link to={"/"} className="text-3xl h-8 font-sans navbar-heading">
-            saud
+            saudhashmi.com
           </Link>
         </h1>
       </nav>
 
-      <h1 className="mt-10 font-plex font-semibold text-4xl">Library</h1>
+      <h1 className="mt-10 text-6xl font-apple font-bold">Library</h1>
       <br />
-      <p className="text-lg font-plex">I read a lot. A LOT!</p>
+      <p className="text-2xl font-apple">I read a lot. A LOT!</p>
 
       <hr className="mt-10 border-4 border-indigo-300" />
 
@@ -43,8 +43,8 @@ export function Library() {
         ))}
       </div>
       <br/>
-      <p className="text-xl font-plex">and more to add...</p>
-      <footer className="mt-16 font-plex bg-indigo-500 text-white p-2">
+      <p className="text-xl font-apple">and more to add...</p>
+      <footer className="mt-16 font-apple bg-indigo-500 text-white p-2">
         Copyright 2023 © Saud Hashmi. All Rights Reserved.
       </footer>
     </div>
