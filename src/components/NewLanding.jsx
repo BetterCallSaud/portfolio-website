@@ -39,7 +39,7 @@ export default function NewLanding() {
   return (
     <div className="text-center font-sans">
       {/* NAVBAR */}
-      {/* <nav className="w-full h-fit p-5 flex justify-between max-sm:justify-center shadow-md flex-wrap">
+      {/* <nav className="w-full h-fit p-5 flex justify-between max-md:justify-center shadow-md flex-wrap">
         <h1>
           <Link to={"/"} className="text-3xl h-8 font-sans navbar-heading">
             saud
@@ -50,7 +50,7 @@ export default function NewLanding() {
         </div>
       </nav> */}
 
-      <h1 className="font-apple font-bold md:text-7xl text-black mt-16 sm:mb-4 text-4xl md:text-black">
+      <h1 className="font-apple font-bold md:text-7xl text-black mt-16 sm:mb-4 text-4xl md:text-black max-md:mx-4">
         Saud Hashmi, <span className="navbar-heading">my name is.</span>
       </h1>
       <h1 className="text-xl font-sans">
@@ -58,20 +58,20 @@ export default function NewLanding() {
       </h1>
 
       {/* INTRODUCTION */}
-      <section className="flex justify-evenly mt-20 mx-20">
-        <div className="w-1/3">
+      <section className="flex justify-evenly mt-20 mx-20 max-md:flex-col max-md:mx-10">
+        <div className="w-1/3 max-md:mb-20 max-md:w-full max-md:flex max-md:justify-center">
           <img
             className="shadow-xl shadow-indigo-300 hover:translate-x-6 hover:translate-y-6 duration-500"
             src={ProfilePic}
             alt=""
           />
         </div>
-        <div className="flex w-2/3 flex-col items-start gap-4">
-          <h1 className="text-xl font-bold">
+        <div className="flex w-2/3 flex-col items-start gap-4 max-md:w-fit max-md:items-center">
+          <h1 className="text-xl font-bold text-center">
             ⏬ I'm not good at introductions, so choose whichever option you
             prefer
           </h1>
-          <div className="flex gap-2">
+          <div className="flex gap-2 max-md:flex-col max-md:justify-center">
             <button
               onClick={() => renderIntroduction("professional")}
               className="bg-blue-300 text-slate-800 p-2 font-bold font-apple rounded-md hover:shadow-lg"
@@ -91,7 +91,7 @@ export default function NewLanding() {
               AI-Generated
             </button>
           </div>
-          <p className="text-left italic">{introductionText}</p>
+          <p className="text-left italic max-md:mt-8 max-md:text-justify">{introductionText}</p>
         </div>
       </section>
 
@@ -102,9 +102,9 @@ export default function NewLanding() {
           that?
         </h1>
 
-        <div className="flex w-full mt-10 mb-20 max-sm:flex-col">
-          <div className="w-1/3 bg-black max-sm:w-full">
-            <h1 className="text-6xl text-white font-sans font-semibold text-left m-10 max-sm:text-4xl max-sm:text-center">
+        <div className="flex w-full mt-10 mb-20 max-md:flex-col">
+          <div className="w-1/3 bg-black max-md:w-full">
+            <h1 className="text-6xl text-white font-sans font-semibold text-left m-10 max-md:text-4xl max-md:text-center">
               What is <br /> E3?
             </h1>
           </div>
@@ -113,9 +113,9 @@ export default function NewLanding() {
               background:
                 "conic-gradient(from 90deg at 34.33% 52.88%, #FF4343 0deg, #FFC120 283.13deg, #FF4343 360deg)",
             }}
-            className="w-2/3 text-left pl-20 py-10 max-sm:w-full max-sm:text-center max-sm:pl-0"
+            className="w-2/3 text-left pl-20 py-10 max-md:w-full max-md:text-center max-md:pl-0"
           >
-            <h1 className="text-5xl font-sans font-bold leading-[2.5rem] max-sm:text-4xl">
+            <h1 className="text-5xl font-sans font-bold leading-[2.5rem] max-md:text-4xl">
               EDUC.
               <br />
               ENGG.
@@ -125,7 +125,7 @@ export default function NewLanding() {
             <br />
             <br />
             <div
-              className="font-sans text-white text-2xl pr-28 max-sm:p-0 max-sm:mx-8 max-sm:text-lg"
+              className="font-sans text-white text-2xl pr-28 max-md:p-0 max-md:mx-8 max-md:text-lg"
               style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
             >
               <p>
@@ -145,7 +145,7 @@ export default function NewLanding() {
       </section>
 
       {/* INTERESTS */}
-      <section className="justify-evenly mt-20 mx-20">
+      <section className="justify-evenly mt-20 mx-20 max-md:mx-10">
         <h1 className="text-5xl font-apple font-bold">
           It's clear by now:{" "}
           <u>
@@ -153,7 +153,7 @@ export default function NewLanding() {
           </u>
         </h1>
         <br />
-        <p className="text-2xl">
+        <p className="text-2xl max-md:text-xl">
           My love for my kind is the base of my interests. To wit, I am
           interested in the important things concerning the human race.{" "}
           <b>
@@ -199,23 +199,23 @@ export default function NewLanding() {
             />{" "}
           </a>
         </div>
-        <p className="mt-8 text-2xl">
+        <p className="mt-8 text-2xl max-md:text-xl">
           Oh that reminds me, here's my <Link className="hover:underline decoration-dotted font-bold text-indigo-400" to="/library">Library</Link> so far. It could also give you an idea of what things I am interested in.
         </p>
       </section>
 
       {/* WORK */}
       <section className="justify-evenly mt-20">
-        <h1 className="mb-20 text-5xl font-apple font-bold">
+        <h1 className="mb-20 text-5xl font-apple font-bold mx-10">
           Now that you know a little about me, <br />
           let me share my <span className="navbar-heading">work</span>.
         </h1>
 
         {/* BRANDS */}
-        <div id="brands" className="mx-20">
+        <div id="brands" className="mx-20 max-md:mx-10">
           <h1 className="mt-10 font-apple font-semibold text-4xl">Brands</h1>
           <br />
-          <p className="text-lg font-sans max-sm:text-base max-sm:mr-8">
+          <p className="text-lg font-sans max-md:text-xl">
             I am an entrepreneur, building amazing things with amazing humans
             and artificial intelligence. Currently,
             <br />I am building five online brands:{" "}
@@ -226,7 +226,7 @@ export default function NewLanding() {
             .<br />
             {/* Click on a logo to find out more about the brand. */}
           </p>
-          <div className="flex gap-4 justify-center mt-20 max-lg:flex-col max-md:w-full">
+          <div className="flex gap-4 justify-center mt-20 max-md:flex-col max-md:mx-8 max-md:items-center">
             {/* BETTER CALL SAUD */}
             <div className="max-lg:my-4">
               <img
@@ -372,12 +372,12 @@ export default function NewLanding() {
         <div id="work">
           <h1 className="mt-28 font-apple font-semibold text-4xl">Work</h1>
           <br />
-          <p className="font-sans text-lg mb-2 max-sm:text-base max-sm:mx-8">
+          <p className="font-sans text-lg mb-2 max-md:text-xl max-md:mx-10">
             Apart from my brands, there are other projects I have worked/been
             working on, and yes, <br />
             the ones listed below are the ones I really care(d) about.
           </p>
-          <p className="font-sans text-lg mb-12 max-sm:text-base max-sm:mx-8">
+          <p className="font-sans text-lg mb-12 max-md:text-xl max-md:mt-8 max-md:mx-10">
             To look at more of what I have done, visit my{" "}
             <a
               className="text-blue-700 underline font-bold"
@@ -400,8 +400,8 @@ export default function NewLanding() {
           </p>
 
           {/* WORK 1 */}
-          <div className="flex w-full max-sm:flex-col">
-            <div className="w-1/3 bg-black max-sm:w-full">
+          <div className="flex w-full max-md:flex-col">
+            <div className="w-1/3 bg-black max-md:w-full">
               <img className="" src={Work1} alt="cscult" />
             </div>
             <div
@@ -409,18 +409,18 @@ export default function NewLanding() {
                 background:
                   "conic-gradient(from 90deg at 34.33% 52.88%, #E543FF 0deg, #20A1FF 110.62deg, #E543FF 360deg)",
               }}
-              className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-sm:w-full max-sm:text-center max-sm:pl-0"
+              className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-md:w-full max-md:text-center max-md:pl-0"
             >
-              <h1 className="text-6xl text-white font-sans font-bold leading-[2.5rem] max-sm:text-4xl">
+              <h1 className="text-6xl text-white font-sans font-bold leading-[2.5rem] max-md:text-4xl">
                 CSCult
               </h1>
               <br />
               <br />
               <div
-                className="font-sans text-white text-2xl pr-28 max-sm:pr-0 max-sm:mr-4"
+                className="font-sans text-white text-2xl pr-28 max-md:pr-0 max-md:mr-4"
                 style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
               >
-                <p className="text-3xl max-sm:text-2xl">
+                <p className="text-3xl max-md:text-2xl max-md:mx-4">
                   CSCult (was) the most successful online community in Medi-Caps
                   University
                 </p>
@@ -438,8 +438,8 @@ export default function NewLanding() {
           </div>
 
           {/* WORK 2 */}
-          <div className="flex w-full max-sm:flex-col max-sm:mt-8">
-            <div className="w-1/3 bg-black max-sm:w-full">
+          <div className="flex w-full max-md:flex-col max-md:mt-8">
+            <div className="w-1/3 bg-black max-md:w-full">
               <img className="w-full h-full" src={Work2} alt="unholy ai" />
             </div>
             <div
@@ -447,18 +447,18 @@ export default function NewLanding() {
                 background:
                   "conic-gradient(from 90deg at 34.33% 52.88%, #53AC34 0deg, rgba(192, 255, 170, 0.909774) 279.38deg, #53AC34 360deg)",
               }}
-              className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-sm:w-full max-sm:text-center max-sm:pl-0"
+              className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-md:w-full max-md:text-center max-md:pl-0"
             >
-              <h1 className="text-6xl text-white font-sans font-bold leading-[2.5rem] max-sm:text-4xl max-sm:text-black">
+              <h1 className="text-6xl text-white font-sans font-bold leading-[2.5rem] max-md:text-4xl max-md:text-black">
                 Unholy.ai
               </h1>
               <br />
               <br />
               <div
-                className="font-sans text-white text-2xl pr-28 max-sm:pr-0 max-sm:mr-4"
+                className="font-sans text-white max-md:text-black text-2xl pr-28 max-md:pr-0 max-md:mr-4"
                 style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
               >
-                <p className="text-3xl max-sm:text-2xl">
+                <p className="text-3xl max-md:text-2xl max-md:mx-4">
                   an AI tool that determines whether a song has “unholy” themes
                   or elements
                 </p>
@@ -476,8 +476,8 @@ export default function NewLanding() {
           </div>
 
           {/* WORK 3 */}
-          <div className="flex w-full max-sm:flex-col max-sm:mt-8">
-            <div className="w-1/3 bg-red-900 flex flex-row justify-center align-middle max-sm:w-full">
+          <div className="flex w-full max-md:flex-col max-md:mt-8">
+            <div className="w-1/3 bg-red-900 flex flex-row justify-center align-middle max-md:w-full">
               <img src={Work3} alt="beyond the boundary podcast" />
             </div>
             <div
@@ -485,23 +485,23 @@ export default function NewLanding() {
                 background:
                   "conic-gradient(from 25deg at 44.33% 60%, #FF9C2A 45.7227828502655deg, #3954E8 39.90549087524414deg)",
               }}
-              className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-sm:w-full max-sm:pl-0 max-sm:text-center"
+              className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-md:w-full max-md:pl-0 max-md:text-center"
             >
-              <h1 className="text-6xl text-white font-sans font-bold max-sm:text-4xl">
+              <h1 className="text-6xl text-white font-sans font-bold max-md:text-4xl">
                 Beyond the Boundary Podcast
               </h1>
               <br />
               <br />
               <div
-                className="font-sans text-white text-2xl pr-28 max-sm:pr-0 max-sm:mr-4"
+                className="font-sans text-white text-2xl pr-28 max-md:pr-0 max-md:mr-4"
                 style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
               >
-                <p className="text-3xl max-sm:text-2xl">
+                <p className="text-3xl max-md:text-2xl max-md:mx-4">
                   a unique sports podcast, where I and my co-host go beyond just
                   the scores and stats.
                 </p>
                 <br />
-                <div className="flex max-sm:justify-center">
+                <div className="flex max-md:justify-center">
                   <a
                     rel="noreferrer"
                     href="https://youtube.com/@thebtbpodcast"
@@ -524,26 +524,26 @@ export default function NewLanding() {
           </div>
 
           {/* WORK 4 */}
-          <div className="flex w-full max-sm:flex-col max-sm:mt-8">
-            <div className="w-1/3 bg-black flex flex-row justify-center align-middle max-sm:w-full">
+          <div className="flex w-full max-md:flex-col max-md:mt-8">
+            <div className="w-1/3 bg-black flex flex-row justify-center align-middle max-md:w-full">
               <img className="scale-75" src={Work4} alt="audio2subs" />
             </div>
             <div
               style={{
                 background: "rgba(39, 39, 39, 1)",
               }}
-              className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-sm:w-full max-sm:pl-0 max-sm:text-center"
+              className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-md:w-full max-md:pl-0 max-md:text-center"
             >
-              <h1 className="text-6xl text-white font-sans font-bold max-sm:text-4xl">
+              <h1 className="text-6xl text-white font-sans font-bold max-md:text-4xl">
                 audio2subs
               </h1>
               <br />
               <br />
               <div
-                className="font-sans text-white text-2xl pr-28 max-sm:pr-0 max-sm:mr-4"
+                className="font-sans text-white text-2xl pr-28 max-md:pr-0 max-md:mr-4"
                 style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
               >
-                <p className="text-3xl max-sm:text-2xl">
+                <p className="text-3xl max-md:text-2xl max-md:mx-4">
                   an AI tool that transcribes audio into single-word timestamped
                   subtitles, ready to be used for buzzing content creation
                 </p>
@@ -561,18 +561,18 @@ export default function NewLanding() {
           </div>
 
           {/* WORK 5 */}
-          <div className="flex w-full max-sm:flex-col max-sm:mt-8">
-            <div className="w-1/3 bg-[#fc744c] flex flex-row justify-center align-middle max-sm:w-full">
+          <div className="flex w-full max-md:flex-col max-md:mt-8">
+            <div className="w-1/3 bg-[#fc744c] flex flex-row justify-center align-middle max-md:w-full">
               <img className="scale-75" src={Work5} alt="meewz" />
             </div>
-            <div className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-sm:w-full max-sm:pl-0 max-sm:text-center bg-[#ff501b]">
-              <h1 className="text-6xl text-white font-sans font-bold max-sm:text-4xl">
+            <div className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-md:w-full max-md:pl-0 max-md:text-center bg-[#ff501b]">
+              <h1 className="text-6xl text-white font-sans font-bold max-md:text-4xl">
                 Meewz
               </h1>
               <br />
               <br />
-              <div className="font-sans text-white text-2xl pr-28 max-sm:pr-0 max-sm:mr-4">
-                <p className="text-3xl max-sm:text-2xl">
+              <div className="font-sans text-white text-2xl pr-28 max-md:pr-0 max-md:mr-4">
+                <p className="text-3xl max-md:text-2xl max-md:mx-4">
                   Meewz is a fun platform that serves you the latest SMART news
                   in the form of memes and gag content. With the power of AI, we
                   curate the best form of news and integrate it into memes that
@@ -595,20 +595,20 @@ export default function NewLanding() {
 
       {/* WHAT ELSE? */}
       <section className="justify-between mt-20">
-        <h1 className="mb-4 text-5xl font-apple font-bold">
+        <h1 className="mb-4 text-5xl font-apple font-bold max-md:text-4xl">
           What else interesting here?
         </h1>
-        <h1 className="text-2xl mx-40 font-apple">
+        <h1 className="text-2xl mx-40 font-apple max-md:mx-10 max-md:text-xl">
           I showed you my interests (if you took a quick peak), brands and
           projects. <br />I have a few more things to share before we conclude
           my portfolio.
         </h1>
-        <div className="flex mt-16 justify-evenly mx-20">
-          <div className="flex w-2/3 flex-col items-start mr-12 gap-4">
+        <div className="flex mt-16 justify-evenly mx-20 max-md:mx-8 max-md:flex-col-reverse">
+          <div className="flex w-2/3 flex-col items-start mr-12 gap-4 max-md:w-fit max-md:mx-10 max-md:items-center">
             <h1 className="text-2xl text-left">
               🏆 <b className="underline">Achievements (timeline order)</b>
             </h1>
-            <div className="text-left">
+            <div className="text-justify">
               <li>
                 <b>Merit Panelist</b> at Dainik Bhaskar's Junior Editor II
               </li>
@@ -640,7 +640,7 @@ export default function NewLanding() {
               <li><b>Building Goals:</b> Amazing AI SaaS w/ ppl like <a className="font-bold text-blue-600 decoration-dotted underline underline-offset-4" href="https://twitter.com/iamHammadNasir" target="_blank" rel="noreferrer">@iamHammadNasir</a> and <a className="font-bold text-blue-600 decoration-dotted underline underline-offset-4" href="https://twitter.com/heysaqh" target="_blank" rel="noreferrer">@heysaqh</a>, bigger professional network, a quantum tech project, Stemble's <a className="font-bold text-violet-700 decoration-dashed underline underline-offset-4" href="https://www.youtube.com/@stemble_/playlists" target="_blank" rel="noreferrer">Nerding It Down!</a> breakdown series and an <b className="text-green-500">Islamic Atlas series</b> for The Sapient Believer channel.</li>
             </div>
           </div>
-          <div className="flex items-center justify-end w-1/3">
+          <div className="flex items-center justify-end w-1/3 max-md:mb-10 max-md:w-full max-md:justify-center">
             <img
               className="shadow-xl shadow-indigo-300 h-fit hover:translate-x-6 hover:translate-y-6 duration-500"
               src={OtherPic}
@@ -652,25 +652,25 @@ export default function NewLanding() {
 
       {/* SOCIALS */}
       <section className="mt-28">
-        <h1 className="mb-4 text-5xl font-apple font-bold">
+        <h1 className="mb-4 text-5xl font-apple font-bold max-md:text-4xl">
           Let's connect! 🍕
         </h1>
-        <h1 className="text-2xl mx-40 font-apple">
+        <h1 className="text-2xl mx-40 font-apple max-md:mx-8">
           If you want to offer me a high-paying job 😏, connect with me for your own reasons 🙄, or perhaps get into an intellectual conversation, here are my socials.
         </h1>
-        <div className="mt-10 text-xl flex justify-evenly sm:mx-40 font-sans max-sm:flex-col max-sm:mx-20">
+        <div className="mt-10 text-xl flex justify-evenly sm:mx-40 font-sans max-md:flex-col max-md:mx-20">
             <Link className="bg-blue-800 hover:bg-blue-600 text-white py-2 px-3 rounded-full my-4" to="https://linkedin.com/in/saud-hashmi">LinkedIn</Link>
             <Link className="bg-gradient-to-br from-pink-600 to-yellow-500 text-white hover:from-pink-500 hover:to-yellow-400 py-2 px-3 rounded-full my-4" to="https://instagram.com/btrcallsaud">Instagram</Link>
             <Link className="bg-black text-white hover:bg-white hover:text-black hover:shadow-md py-2 px-3 rounded-full my-4" to="https://threads.net/@btrcallsaud">Threads</Link>
             <Link className="bg-sky-500 hover:bg-sky-400 text-white py-2 px-3 rounded-full my-4" to="https://twitter.com/@BtrCallSaud">Twitter{"(𝕏)"}</Link>
             <Link className="bg-slate-800 hover:bg-slate-600 text-white py-2 px-3 rounded-full my-4" to="https://linkedin.com/in/saud-hashmi">GitHub</Link>
         </div>
-        <Link className="bg-green-600 flex mx-60 justify-center font-bold text-lg hover:bg-green-500 text-white py-2 px-3 rounded-full my-4" to="/resume" target="_blank">Resume (only for recruiters)</Link>
+        <Link className="bg-green-600 flex mx-60 max-md:mx-10 justify-center font-bold text-lg hover:bg-green-500 text-white py-2 px-3 rounded-full my-4" to="/resume" target="_blank">Resume (only for recruiters)</Link>
 
-        <h1 className="text-2xl mt-10 font-apple">
+        <h1 className="text-2xl mt-10 font-apple max-md:mx-10">
           also, yeah, not gonna give out my number (hehe). so here are more ways to reach me.
         </h1>
-        <div className="mt-10 text-xl flex justify-evenly sm:mx-40 font-sans max-sm:flex-col">
+        <div className="mt-10 text-xl flex justify-evenly sm:mx-40 font-sans max-md:flex-col">
             <h1 className="text-indigo-600 ">
                 <b>Discord:</b>
                 <span>@btrcallsaud</span>
