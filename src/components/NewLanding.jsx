@@ -341,27 +341,27 @@ export default function NewLanding() {
             {/* BTB PODCAST */}
             <div className="max-lg:my-4">
               <img
-                className="mb-4 w-full rounded-xl"
+                className="mb-4 w-full rounded-xl shadow-lg drop-shadow-xl"
                 src={Brand5}
                 alt="btb podcast brand"
               />
               <div className="flex justify-evenly gap-2">
                 <a
-                  href="https://instagram.com/beyondtheboundarypodcast"
+                  href="https://instagram.com/athlos.pod"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img
                     src={InstagramIcon}
-                    alt="gpt bros media instagram handle"
+                    alt="athlos podcast instagram handle"
                   />
                 </a>
                 <a
-                  href="https://www.youtube.com/@thebtbpodcast"
+                  href="https://www.youtube.com/@athlospod"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={YouTubeIcon} alt="gpt bros media youtube channel" />
+                  <img src={YouTubeIcon} alt="athlos podcast youtube channel" />
                 </a>
               </div>
             </div>
@@ -483,12 +483,12 @@ export default function NewLanding() {
             <div
               style={{
                 background:
-                  "conic-gradient(from 25deg at 44.33% 60%, #FF9C2A 45.7227828502655deg, #3954E8 39.90549087524414deg)",
+                  "conic-gradient(from 25deg at 44.33% 60%, #CBCBCB 45.7227828502655deg, #FF2B2B 39.90549087524414deg)",
               }}
               className="w-2/3 flex flex-col text-left pl-20 py-10 justify-center max-md:w-full max-md:pl-0 max-md:text-center"
             >
               <h1 className="text-6xl text-white font-sans font-bold max-md:text-4xl">
-                Beyond the Boundary Podcast
+                Athlos Podcast
               </h1>
               <br />
               <br />
@@ -504,7 +504,7 @@ export default function NewLanding() {
                 <div className="flex max-md:justify-center">
                   <a
                     rel="noreferrer"
-                    href="https://youtube.com/@thebtbpodcast"
+                    href="https://youtube.com/@athlospod"
                     target="_blank"
                     className="mr-4 text-lg bg-white text-black p-2 rounded-lg hover:bg-slate-900 hover:text-white duration-200 tracking-widest"
                   >
@@ -512,7 +512,7 @@ export default function NewLanding() {
                   </a>
                   <a
                     rel="noreferrer"
-                    href="https://instagram.com/beyondtheboundarypodcast/reels"
+                    href="https://instagram.com/athlos.pod/reels"
                     target="_blank"
                     className="mr-4 text-lg bg-white text-black p-2 rounded-lg hover:bg-slate-900 hover:text-white duration-200 tracking-widest"
                   >
@@ -628,15 +628,18 @@ export default function NewLanding() {
               <li>
                 Got into short content creation. Here's some rough stats so far:<br/>
                 <span className="ml-6 px-2 bg-blue-200 rounded-full text-black font-bold tracking-wider">
-                  2M+ plays, 100K+ likes, 300+ videos
+                  5M+ plays, 500K+ likes, 500+ videos
                 </span>
+              </li>
+              <li>
+                Interaction/pitch meetings with <b>PedalStart, 100X.VC and Antler</b>
               </li>
             </div>
             <h1 className="text-2xl mt-4 text-left">
               🎯 <b className="underline">Goals (2023-24)</b>
             </h1>
             <div className="text-left">
-              <li><b>Learning Goals:</b> The art of management, more history, more about the NFL and F1, neurosymbolic and interactive AI</li>
+              <li><b>Learning Goals:</b> Management, psychology, archeology, DevOps, neurosymbolic & explainable AI, general relativity & black hole physics</li>
               <li><b>Building Goals:</b> Amazing AI SaaS w/ ppl like <a className="font-bold text-blue-600 decoration-dotted underline underline-offset-4" href="https://twitter.com/iamHammadNasir" target="_blank" rel="noreferrer">@iamHammadNasir</a> and <a className="font-bold text-blue-600 decoration-dotted underline underline-offset-4" href="https://twitter.com/heysaqh" target="_blank" rel="noreferrer">@heysaqh</a>, bigger professional network, a quantum tech project, Stemble's <a className="font-bold text-violet-700 decoration-dashed underline underline-offset-4" href="https://www.youtube.com/@stemble_/playlists" target="_blank" rel="noreferrer">Nerding It Down!</a> breakdown series and an <b className="text-green-500">Islamic Atlas series</b> for The Sapient Believer channel.</li>
             </div>
           </div>
